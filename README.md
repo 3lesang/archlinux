@@ -1,4 +1,4 @@
-# Arch + i3-gaps Install Guide
+# Arch Install Guide
 First set up your keyboard layout. For example, in Spanish:
 ```
    # loadkeys es
@@ -117,11 +117,10 @@ If you run the `lsblk` command you should see something like this:
 ```
    NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
    sda      8:0    0 232.9G  0 disk
-   ├─sda1   8:1    0     1G  0 part /mnt/boot
+   ├─sda1   8:1    0     500M  0 part /mnt/boot
    ├─sda2   8:2    0     4G  0 part [SWAP]
    ├─sda3   8:3    0    50G  0 part /mnt
-   ├─sda4   8:4    0   100G  0 part /mnt/home
-   └─sda5   8:5    0  77.9G  0 part
+   └─sda4   8:4    0   100G  0 part /mnt/home
 ```
 
 ## Installation
