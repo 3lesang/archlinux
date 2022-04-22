@@ -276,22 +276,9 @@ TL;DR AUR is a Community-driven package repository.
    $ makepkg -si
 ```
 
-### The coolest Pacman
-If you want to make Pacman look cooler you can edit the configuration file and
-uncomment the `Color` option and add just below the `ILoveCandy` option.
-```
-   $ sudo nano /etc/pacman.conf
-```
-
-### PulseAudio applet
-If you want to manage your computer's volume from a small icon in the systray:
-```
-   $ yay -S pa-applet-git
-```
-
 ### Manage Bluetooth
 ```
-   $ sudo pacman -S bluez bluez-utils blueman
+   $ sudo pacman -S bluez bluez-utils
    $ sudo systemctl enable bluetooth
 ```
 
