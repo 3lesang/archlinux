@@ -213,7 +213,7 @@ Replace "dell" with your computer name.
 
 ### Install other useful packages
 ```
-   # pacman -S iw wpa_supplicant dialog intel-ucode
+   # pacman -S iw wpa_supplicant dialog intel-ucode xclip scrot feh neovim xterm
    # pacman -S git pulseaudio pulseaudio-bluetooth alsa-utils alsa-plugins xdg-user-dirs
 ```
 
