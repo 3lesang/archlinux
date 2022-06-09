@@ -303,6 +303,12 @@ TL;DR AUR is a Community-driven package repository.
 ```
 
 
+### Install Vietnamese fonts and input method in Arch Linux
+```
+   $ sudo pacman -S fcitx fcitx-unikey fcitx-im fcitx-configtool
+```
+
+
 ### Apply previous settings
 ```
    $ sudo reboot
