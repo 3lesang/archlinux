@@ -33,7 +33,7 @@ exec --no-startup-id feh --bg-fill --randomize ~/Pictures/.wallpaper/*
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 #exec --no-startup-id nm-applet
-
+exec --no-startup-id fcitx -d
 # Hide edge borders only if there is one window with no gaps
 hide_edge_borders smart_no_gaps
 
