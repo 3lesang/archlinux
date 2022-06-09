@@ -286,7 +286,7 @@ TL;DR AUR is a Community-driven package repository.
 
 ### Install graphical environment and i3
 ```
-   $ sudo pacman -S xorg-server xorg-apps xorg-xinit x86-video-intel
+   $ sudo pacman -S xorg-server xorg-apps xorg-xinit xf86-video-intel
    $ sudo pacman -S i3-gaps i3status i3lock
 ```
 
