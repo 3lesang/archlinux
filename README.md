@@ -132,7 +132,7 @@ If you run the `lsblk` command you should see something like this:
 
 ### Install Arch packages
 ```
-   # pacstrap /mnt base base-devel linux linux-firmware neovim
+   # pacstrap /mnt base base-devel linux linux-firmware nano
 ```
 
 ### Generate fstab file
@@ -164,7 +164,7 @@ Add this content to the file:
    LC_ALL=C
 ```
 ```
-   # nvim /etc/vconsole.conf
+   # nano /etc/vconsole.conf
 ```
 Add this content to the file:
 ```
@@ -201,7 +201,7 @@ Assuming your computer is known as "dell":
 
 ### Adding content to the hosts file
 ```
-   # nvim /etc/hosts
+   # nano /etc/hosts
 ```
 And add this content to the file:
 ```
@@ -214,7 +214,7 @@ Replace "dell" with your computer name.
 ### Install other useful packages
 ```
    # pacman -S iw wpa_supplicant dialog intel-ucode
-   # pacman -S wget git pulseaudio alsa-utils alsa-plugins xdg-user-dirs
+   # pacman -S git pulseaudio pulseaudio-bluetooth alsa-utils alsa-plugins xdg-user-dirs
 ```
 
 ### Update root password
@@ -238,7 +238,7 @@ can log in with the root user and the password chosen in the previous step.
 ### Add your user
 Assuming your chosen user is "dell":
 ```
-   # useradd -m -g users -G wheel,storage,power,video,audio dell
+   # useradd -m -g users -G wheel,storage,power,video,audio,network dell
    # passwd dell
 ```
 
@@ -304,14 +304,14 @@ If your laptop is a ThinkPad, also run this:
 
 ### Install graphical environment and i3
 ```
-   $ sudo pacman -S xorg-server xorg-apps xorg-xinit
-   $ sudo pacman -S i3-gaps i3blocks i3lock numlockx
+   $ sudo pacman -S xorg-server xorg-apps xorg-xinit x86-video-intel
+   $ sudo pacman -S i3-gaps i3status i3lock numlockx
 ```
 
 
 ### Install some basic fonts
 ```
-   $ sudo pacman -S noto-fonts ttf-ubuntu-font-family ttf-dejavu ttf-freefont
+   $ sudo pacman -S ttf-dejavu ttf-freefont ttf-fira-code
    $ sudo pacman -S ttf-liberation ttf-droid ttf-roboto terminus-font
 ```
 
