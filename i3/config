@@ -54,7 +54,7 @@ bindsym $mod+Shift+q kill
 bindsym Ctrl+Shift+q exec i3-msg exit 
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+d exec --no-startup-id dmenu_run -fn 'mono:pixelsize=20' -nb '#fdf6e3' -nf '#586c75' -sf '#fdf6e3' -sb '#b58900'
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
