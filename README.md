@@ -149,13 +149,13 @@ If you run the `lsblk` command you should see something like this:
 
 ### Language-related settings
 ```
-   # nvim /etc/locale.gen
+   # nano /etc/locale.gen
 ```
 Now you have to uncomment the language of your choice, for example
 `en_US.UTF-8 UTF-8`.
 ```
    # locale-gen
-   # nvim /etc/locale.conf
+   # nano /etc/locale.conf
 ```
 Add this content to the file:
 ```
@@ -282,30 +282,12 @@ TL;DR AUR is a Community-driven package repository.
    $ sudo systemctl enable bluetooth
 ```
 
-### Improve laptop battery consumption
-```
-   $ sudo pacman -S tlp tlp-rdw powertop acpi
-   $ sudo systemctl enable tlp
-   $ sudo systemctl enable tlp-sleep
-   $ sudo systemctl mask systemd-rfkill.service
-   $ sudo systemctl mask systemd-rfkill.socket
-```
-If your laptop is a ThinkPad, also run this:
-```
-   $ sudo pacman -S acpi_call
-```
-
-### Enable SSD TRIM
-```
-   $ sudo systemctl enable fstrim.timer
-```
-
 ## i3-gaps related steps
 
 ### Install graphical environment and i3
 ```
    $ sudo pacman -S xorg-server xorg-apps xorg-xinit x86-video-intel
-   $ sudo pacman -S i3-gaps i3status i3lock numlockx
+   $ sudo pacman -S i3-gaps i3status i3lock
 ```
 
 
