@@ -1,7 +1,7 @@
 # Arch Install Guide
-First set up your keyboard layout. For example, in Spanish:
+First set up your keyboard layout. For example, in English:
 ```
-   # loadkeys es
+   # loadkeys us
 ```
 For a list of all acceptable keymaps:
 ```
