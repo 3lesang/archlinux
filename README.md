@@ -320,7 +320,7 @@ TL;DR AUR is a Community-driven package repository.
    $ sudo pacman -S pulseaudio pulseaudio-bluetooth alsa-utils alsa-plugins
 ```
 
-### Install other way
+### Install packages by other way
 ```
    $ git clone https://github.com/nonesang/pkgarch.git
    $ cd pkgarch
