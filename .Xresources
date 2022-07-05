@@ -12,5 +12,5 @@ XTerm.vt100.translations: #override \n\
     Ctrl Shift <Key>P:  insert-selection(CLIPBOARD) \n\
     Ctrl Shift <Key>Y:  select-end(CLIPBOARD)
 XTerm.vt100.foreground: white
-XTerm.vt100.background: black
+XTerm.vt100.background: #0f1419
 XTerm.vt100.faceName: Source Code Pro:size=16:antialias=false
