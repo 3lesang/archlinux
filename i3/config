@@ -15,6 +15,9 @@ set $mod Mod4
 # is used in the bar {} block below.
 font pango:monospace 8
 
+#for_window [ workspace="1" ] floating enable
+for_window [class="^.*"] border pixel 0
+for_window [class="[.]*"] floating enable
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
@@ -34,15 +37,12 @@ exec --no-startup-id feh --bg-fill --randomize ~/Pictures/wallpaper/*
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 #exec --no-startup-id nm-applet
 exec --no-startup-id fcitx -d
-
-exec --no-startup-id picom
-for_window [class="^.*"] border pixel 0
-for_window [class="[.]*"] floating enable
 # Hide edge borders only if there is one window with no gaps
+#hide_edge_borders smart_no_gaps
+exec --no-startup-id picom
 default_border pixel 1
 default_floating_border pixel 1
 hide_edge_borders smart
-
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
