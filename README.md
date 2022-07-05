@@ -213,8 +213,7 @@ Replace "dell" with your computer name.
 
 ### Install other useful packages
 ```
-   # pacman -S iw wpa_supplicant dialog intel-ucode xclip scrot feh neovim xterm mpv
-   # pacman -S git pulseaudio pulseaudio-bluetooth alsa-utils alsa-plugins xdg-user-dirs
+   $ pacman -S iw wpa_supplicant dialog intel-ucode
 ```
 
 ### Update root password
@@ -314,6 +313,12 @@ TL;DR AUR is a Community-driven package repository.
    $ sudo pacman -S fcitx fcitx-unikey fcitx-im fcitx-configtool
 ```
 
+
+### Install other useful packages
+```
+   $ sudo pacman -S git xclip scrot feh neovim xterm mpv xdg-user-dirs
+   $ sudo pacman -S pulseaudio pulseaudio-bluetooth alsa-utils alsa-plugins
+```
 
 ### Apply previous settings
 ```
