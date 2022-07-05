@@ -213,7 +213,7 @@ Replace "dell" with your computer name.
 
 ### Install other useful packages
 ```
-   # pacman -S iw wpa_supplicant dialog intel-ucode xclip scrot feh neovim xterm
+   # pacman -S iw wpa_supplicant dialog intel-ucode xclip scrot feh neovim xterm mpv
    # pacman -S git pulseaudio pulseaudio-bluetooth alsa-utils alsa-plugins xdg-user-dirs
 ```
 
@@ -290,6 +290,12 @@ TL;DR AUR is a Community-driven package repository.
    $ sudo pacman -S i3-gaps i3status i3lock
 ```
 
+### Install display manager
+```
+   $ sudo pacman -S lightdm lightdm-gtk-greeter
+   $ sudo systemctl start lightdm.service
+   $ sudo systemctl enable lightdm.service
+```
 
 ### Install some basic fonts
 ```
@@ -299,7 +305,7 @@ TL;DR AUR is a Community-driven package repository.
 
 ### Install some useful tools on i3
 ```
-   $ sudo pacman -S ranger dmenu --needed
+   $ sudo pacman -S ranger rofi --needed
 ```
 
 
