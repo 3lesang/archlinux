@@ -35,7 +35,9 @@ exec --no-startup-id feh --bg-fill --randomize ~/Pictures/wallpaper/*
 #exec --no-startup-id nm-applet
 exec --no-startup-id fcitx -d
 # Hide edge borders only if there is one window with no gaps
-hide_edge_borders smart_no_gaps
+default_border pixel 1
+default_floating_border pixel 1
+hide_edge_borders smart
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
