@@ -5,9 +5,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
-PS1='[\u@\h \W]\$ '
-alias reboot="systemctl reboot"
-neofetch
+if [ -e $HOME/.alias ]; then
+	[ -n "$PS1" ] && . $HOME/.alias
+fi
 
-[ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID" >/dev/null
+PS1='[\u@\h \W]\$ '
